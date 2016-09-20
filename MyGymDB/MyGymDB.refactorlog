@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ea7d95e5-e224-4d59-a64f-7d8a42d038d2" ChangeDateTime="09/18/2016 15:43:43">
+    <Property Name="ElementName" Value="[import].[User].[UserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[import].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GymUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab2d0586-b784-435b-9f66-0361fb34ad61" ChangeDateTime="09/18/2016 15:49:32">
+    <Property Name="ElementName" Value="[import].[Exercise].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[import].[Exercise]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExerciseId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e01dc92c-e976-48dc-9e7b-6b5a0e1470c4" ChangeDateTime="09/18/2016 15:52:16">
+    <Property Name="ElementName" Value="[dbo].[Activity].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Activity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ActivityID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ff889807-1822-475a-b5d9-527fc317b823" ChangeDateTime="09/18/2016 15:54:30">
+    <Property Name="ElementName" Value="[dbo].[Activity].[Repitions]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Activity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExerciseCount" />
+  </Operation>
+</Operations>

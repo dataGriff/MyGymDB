@@ -1,0 +1,6 @@
+﻿CREATE TABLE [import].[Sex]
+(
+	[SexId] TINYINT IDENTITY NOT NULL PRIMARY KEY
+	,[Description] NVARCHAR(15) NOT NULL, 
+    [FirstInserted] DATETIME2 NOT NULL DEFAULT getdate()
+)
