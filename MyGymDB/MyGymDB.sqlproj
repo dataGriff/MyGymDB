@@ -62,7 +62,7 @@
     <Folder Include="import" />
     <Folder Include="import\Tables" />
     <Folder Include="acc\Views" />
-    <Folder Include="import\Tables\Activity" />
+    <Folder Include="import\Tables\ExerciseLog" />
     <Folder Include="import\Tables\Exercise" />
     <Folder Include="import\Tables\GymUser" />
     <Folder Include="import\Tables\Sex" />
@@ -75,7 +75,7 @@
     <Build Include="acc\Views\GymUser.sql" />
     <Build Include="import\Tables\Sex\Sex.sql" />
     <Build Include="import\Tables\GymUser\GymUser.sql" />
-    <Build Include="import\Tables\Activity\Activity.sql" />
+    <Build Include="import\Tables\ExerciseLog\ExerciseLog.sql" />
     <Build Include="import\Tables\Exercise\Exercise.sql" />
     <Build Include="import\Tables\Sex\pr_PopulateSex.sql" />
     <Build Include="import\Tables\Exercise\pr_PopulateExercise.sql" />

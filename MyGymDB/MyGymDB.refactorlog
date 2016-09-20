@@ -28,4 +28,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ExerciseCount" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8427d979-3eea-460c-a289-c17f85611dec" ChangeDateTime="09/20/2016 18:38:15">
+    <Property Name="ElementName" Value="[import].[Activity].[ActivityID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[import].[Activity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExerciseLogID" />
+  </Operation>
 </Operations>
