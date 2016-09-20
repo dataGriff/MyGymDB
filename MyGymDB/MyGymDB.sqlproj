@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{f98a8498-86a8-4c81-b079-07490fc3bd21}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -89,5 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PopulatingScripts\PopulateSex.sql" />
+    <None Include="MyGymDB.publish.xml" />
   </ItemGroup>
 </Project>
