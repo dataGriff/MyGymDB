@@ -233,6 +233,8 @@ If you havent got your MyGymDB solution open already, open it, otherwise right-c
 
 * Now that we have done our first user story we will publish to live. 
 
+[Demo Publish Database to Azure]()
+
 # 3 Database Development : Creating Exercise Objects  
 
 # 4 Database Development : Populate Reference Data

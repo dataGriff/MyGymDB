@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [import].[ExerciseLog]
 (
 	[ExerciseLogID] INT NOT NULL CONSTRAINT PK_ExerciseLogID PRIMARY KEY, 
-    [ExerciseID] SMALLINT NOT NULL, 
+    [ExerciseID] int NOT NULL, 
     [ActivityDate] DATETIME2 NOT NULL, 
     [ExerciseCount] TINYINT NOT NULL, 
     [GymUserId] INT NOT NULL, 
