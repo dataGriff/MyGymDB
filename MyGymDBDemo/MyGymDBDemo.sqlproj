@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>MyGymDB</Name>
+    <Name>MyGymDBDemo</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{f98a8498-86a8-4c81-b079-07490fc3bd21}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{53139c91-dc6f-419e-837a-730bded5ebd4}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>MyGymDB</RootNamespace>
-    <AssemblyName>MyGymDB</AssemblyName>
+    <RootNamespace>MyGymDBDemo</RootNamespace>
+    <AssemblyName>MyGymDBDemo</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -58,64 +58,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Security" />
-    <Folder Include="acc" />
-    <Folder Include="import" />
-    <Folder Include="import\Tables" />
-    <Folder Include="acc\Views" />
-    <Folder Include="import\Tables\ExerciseLog" />
-    <Folder Include="import\Tables\Exercise" />
-    <Folder Include="import\Tables\GymUser" />
-    <Folder Include="import\Tables\Sex" />
-    <Folder Include="PopulatingScripts" />
-    <Folder Include="TemplateScripts" />
-    <Folder Include="import\Procedures" />
     <Folder Include="Security\Schemas" />
-    <Folder Include="Security\Roles" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="acc\Views\GymUser.sql" />
-    <Build Include="import\Tables\Sex\Sex.sql" />
-    <Build Include="import\Tables\GymUser\GymUser.sql" />
-    <Build Include="import\Tables\ExerciseLog\ExerciseLog.sql" />
-    <Build Include="import\Tables\Exercise\Exercise.sql" />
-    <None Include="PopulatingScripts\PopulateExercise.sql" />
-    <None Include="TemplateScripts\01b_acc_sch.sql" />
-    <None Include="TemplateScripts\01c_app_sch.sql" />
-    <None Include="TemplateScripts\03c_Import_GymUser_tb.sql" />
-    <Build Include="import\Procedures\pr_PopulateSex.sql" />
-    <Build Include="import\Procedures\pr_PopulateExercise.sql" />
-    <None Include="TemplateScripts\06a_import_pr_PopulateSex_sp.sql" />
-    <None Include="TemplateScripts\06b_PopulateSex.sql" />
-    <None Include="TemplateScripts\06c_PostDeploy_SexExercise.sql" />
-    <None Include="TemplateScripts\02a_import_role.sql" />
-    <None Include="TemplateScripts\02b_acc_role.sql" />
-    <None Include="TemplateScripts\02c_app_role.sql" />
-    <None Include="TemplateScripts\03b_Import_Sex_tb.sql" />
     <Build Include="Security\Schemas\import.sql" />
-    <Build Include="Security\Roles\import.sql" />
-    <Build Include="Security\Roles\acc.sql" />
-    <Build Include="Security\Roles\app.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="MyGymDB.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PopulatingScripts\PopulateSex.sql" />
-    <None Include="TemplateScripts\03a_Import_Sex_tb.sql" />
-    <None Include="TemplateScripts\01a_import_sch.sql" />
-    <None Include="TemplateScripts\04a_import_Exercise.sql" />
-    <None Include="TemplateScripts\04b_import_ExerciseLog.sql" />
-    <None Include="TemplateScripts\05a_import_pr_PopulateSex_sp.sql" />
-    <None Include="TemplateScripts\05b_PopulateSex.sql" />
-    <None Include="TemplateScripts\05c_PostDeploy_Sex.sql" />
-    <None Include="_readme.md" />
-    <None Include="MyGymDB_dev.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="Security\Schemas\app.sql" />
-    <Build Include="Security\Schemas\acc.sql" />
   </ItemGroup>
 </Project>
