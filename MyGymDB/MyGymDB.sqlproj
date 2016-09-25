@@ -71,6 +71,7 @@
     <Folder Include="import\Procedures" />
     <Folder Include="Security\Schemas" />
     <Folder Include="Security\Roles" />
+    <Folder Include="_Documentation" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="acc\Views\GymUser.sql" />
@@ -113,8 +114,9 @@
     <None Include="TemplateScripts\05a_import_pr_PopulateSex_sp.sql" />
     <None Include="TemplateScripts\05b_PopulateSex.sql" />
     <None Include="TemplateScripts\05c_PostDeploy_Sex.sql" />
-    <None Include="_readme.md" />
     <None Include="MyGymDB_dev.publish.xml" />
+    <None Include="_Documentation\_readme.md" />
+    <None Include="_Documentation\Presentation.html" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Schemas\app.sql" />
