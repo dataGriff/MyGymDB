@@ -57,14 +57,6 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Security" />
-    <Folder Include="Security\Schemas" />
-    <Folder Include="import" />
-    <Folder Include="import\Tables" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="Security\Schemas\import.sql" />
-    <Build Include="import\Tables\Exercise.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyGymDBDemo.refactorlog" />

@@ -98,6 +98,7 @@
     <Build Include="Security\Roles\app.sql" />
     <Build Include="import\Tables\Test.sql" />
     <Build Include="import\Tables\Test2.sql" />
+    <Build Include="TemplateScripts\01a_import_sch.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyGymDB.refactorlog" />
@@ -108,7 +109,6 @@
   <ItemGroup>
     <None Include="PopulatingScripts\PopulateSex.sql" />
     <None Include="TemplateScripts\03a_Import_Sex_tb.sql" />
-    <None Include="TemplateScripts\01a_import_sch.sql" />
     <None Include="TemplateScripts\04a_import_Exercise.sql" />
     <None Include="TemplateScripts\04b_import_ExerciseLog.sql" />
     <None Include="TemplateScripts\05a_import_pr_PopulateSex_sp.sql" />
