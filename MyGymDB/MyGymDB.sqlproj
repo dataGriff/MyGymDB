@@ -96,8 +96,6 @@
     <Build Include="Security\Roles\import.sql" />
     <Build Include="Security\Roles\acc.sql" />
     <Build Include="Security\Roles\app.sql" />
-    <Build Include="import\Tables\Test.sql" />
-    <Build Include="import\Tables\Test2.sql" />
     <Build Include="TemplateScripts\01a_import_sch.sql" />
   </ItemGroup>
   <ItemGroup>
