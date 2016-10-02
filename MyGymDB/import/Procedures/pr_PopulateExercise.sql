@@ -15,3 +15,4 @@ UNION ALL
 SELECT 'Squat' AS 'Description'
 EXCEPT 
 SELECT [Description] FROM [import].[Exercise];
+
