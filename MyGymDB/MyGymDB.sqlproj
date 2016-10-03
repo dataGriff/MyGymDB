@@ -112,7 +112,6 @@
     <None Include="TemplateScripts\05b_PopulateSex.sql" />
     <None Include="TemplateScripts\05c_PostDeploy_Sex.sql" />
     <None Include="MyGymDB_dev.publish.xml" />
-    <None Include="readme.md" />
     <None Include="MyGymDB_prod.publish.xml" />
   </ItemGroup>
   <ItemGroup>
