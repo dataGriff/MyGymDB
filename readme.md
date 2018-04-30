@@ -1,6 +1,6 @@
 ﻿# Overview
 
-**Note: The ReadMe file is still a work in progress! (the code is fine mind) I hope to get it finished soon. For a more basic overview until the detail of this is complete, please see my [blog post with accompanying presentation](http://www.datagriff.com/2016/10/SQLRelay2016DIYDBFromHome/)
+**Note:** The ReadMe file is still a work in progress! (the code is fine mind) I hope to get it finished soon. For a more basic overview until the detail of this is complete, please see my [blog post with accompanying presentation](http://www.datagriff.com/2016/10/SQLRelay2016DIYDBFromHome/)
 
 This repository aims to give people an idea of how they can use free tools to manage their database work, setup an infrastructure and develop code.
 
@@ -144,7 +144,7 @@ If you haven't got your MyGymDB project open already, open it, otherwise:
 
 ### 4.1 Create Schemas
 
-**The following scripts can be found in the TemplateScripts folder marked 01a_ to 01c_. **
+**The following scripts can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder marked 01a_ to 01c_.**
 
 * Right-click the Security/Schemas folder and add a schema called **import**. This will contain all the objects, primarily tables that would keep hidden from end products and users.
 * Right-click the Security/Schemas folder and add a schema called **acc** This is short for "access" and will provide a layer of abstraction, primarily in the form of views, that you will use to present end products to users.
@@ -153,7 +153,7 @@ If you haven't got your MyGymDB project open already, open it, otherwise:
 
 ### 4.2 Create Roles
 
-**The following scripts can be found in the TemplateScripts folder marked 02a_ to 02c_.**
+**The following scripts can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder marked 02a_ to 02c_.**
 
 * Right-click the Security/Roles folder and add a role called **import**. This role will be granted appropriate access to the import schema.
 * Right-click the Security/Roles folder and add a role called **acc**. This role will be granted appropriate access to the acc schema.
@@ -190,7 +190,7 @@ If you havent got your MyGymDB solution open already, open it, otherwise right-c
 * Create a folder called import
 * Create a folder called Tables in the import folder
 
-* Right-click the import/Tables folder and add a table called Sex. The script for this can be found in the TemplateScript folder beginning with 03a_.
+* Right-click the import/Tables folder and add a table called Sex. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 03a_.
 * Build your project and see the table in the localdb in SQL Server Object Explorer.
 * Publish your project to the development location.
 
@@ -199,7 +199,7 @@ If you havent got your MyGymDB solution open already, open it, otherwise right-c
 * You realise you want to make the Sex identity column TINYINT instead of INT as it is smaller and you only have a few values.
 * Choosing the smallest datatype that can always fit your range of values in is the best practice. Make sure this is the case though.
 * For more information see data types sizes and their ranges in books online.
-* Amend the SexID column to be SMALLINT instead of INT. The complete script for this can be found in the TemplateScript folder beginning with 03c_.  
+* Amend the SexID column to be SMALLINT instead of INT. The complete script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 03c_.  
 * Note: SSDT deployment is state based so you provide the code with how you want it to look, therefore you always supply CREATE statements and not ALTER.
 * Build the database.
 * Publish the database.
@@ -213,7 +213,7 @@ If you havent got your MyGymDB solution open already, open it, otherwise right-c
 
 If you havent got your MyGymDB solution open already, open it.
 
-* Right-click the import/Tables folder and add a table called GymUser. The script for this can be found in the TemplateScript folder beginning with 03c_.
+* Right-click the import/Tables folder and add a table called GymUser. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 03c_.
 * Build your project and see the table in the projects in SQL Server Object Explorer.
 * Publish your project to the development location.
 * Now that we are happy with our sex table task, we will check the code into source control and mark the task as completed. 
@@ -233,7 +233,7 @@ As we're picking up this piece of work we should move the user story into active
 
 ### Create Reference Data Table for Exercise
 
-* Right-click the import/Tables folder and add a table called Exercise. The script for this can be found in the TemplateScript folder beginning with 04a_.
+* Right-click the import/Tables folder and add a table called Exercise. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 04a_.
 * Build your project and see the table in the projects area in SQL Server Object Explorer.
 * Publish your project to the development location.
 
@@ -245,7 +245,7 @@ As we're picking up this piece of work we should move the user story into active
 
 If you havent got your MyGymDB solution open already, open it. 
 
-* Right-click the import/Tables folder and add a table called ExerciseLog. The script for this can be found in the TemplateScript folder beginning with 04b_.
+* Right-click the import/Tables folder and add a table called ExerciseLog. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 04b_.
 * Build your project and see the table in the projects in SQL Server Object Explorer.
 * Publish your project to the development location.
 * Now that we are happy with our ExerciseLog table task, we will check the code into source control and mark the task as completed. 
@@ -262,13 +262,13 @@ As we're picking up this piece of work we should move the user story into active
 
 If you havent got your MyGymDB solution open already, open it.
 
-* Right-click the import/Procedures folder and add a procedure called pr_PopulateSex. The script for this can be found in the TemplateScript folder beginning with 05a_.
+* Right-click the import/Procedures folder and add a procedure called pr_PopulateSex. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05a_.
 * Right-click the MyGymDB project and add a new folder called "Populating Scripts."
-* Right-click the "Populating Scripts" folder and add a "Script" which is "Not in Build". The script for this can be found in the TemplateScript folder beginning with 05b_. Call the script "PopulateSex".
+* Right-click the "Populating Scripts" folder and add a "Script" which is "Not in Build". The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05b_. Call the script "PopulateSex".
 
 ### Create Post Deployment Script to Populate Sex Reference Data
 
-* Right-click the MyGymDB project and add a "Script" which is "Post-Deployment Script". The script for this can be found in the TemplateScript folder beginning with 05c_.
+* Right-click the MyGymDB project and add a "Script" which is "Post-Deployment Script". The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05c_.
  * Build your project and see the table in the localdb in SQL Server Object Explorer.
 * Publish your project to the development location.
 * You should now see that the sex table has data in it as it has been populated in our post deployment script. 
@@ -281,19 +281,19 @@ If you havent got your MyGymDB solution open already, open it.
 
 If you havent got your MyGymDB solution open already, open it.
 
-* Right-click the import/Procedures folder and add a procedure called pr_PopulateExercise. The script for this can be found in the TemplateScript folder beginning with 05d_.
-* Right-click the "Populating Scripts" folder and add a "Script" which is "Not in Build". The script for this can be found in the TemplateScript folder beginning with 05e_. Call the script "PopulateExercise".
+* Right-click the import/Procedures folder and add a procedure called pr_PopulateExercise. The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05d_.
+* Right-click the "Populating Scripts" folder and add a "Script" which is "Not in Build". The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05e_. Call the script "PopulateExercise".
 
 ### Create Post Deployment Script to Populate Sex Reference Data
 
-* Right-click the MyGymDB project and add a "Script" which is "Post-Deployment Script". The script for this can be found in the TemplateScript folder beginning with 05c_.
+* Right-click the MyGymDB project and add a "Script" which is "Post-Deployment Script". The script for this can be found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05c_.
  * Build your project and see the table in the localdb in SQL Server Object Explorer.
 * Publish your project to the development location.
 * You should now see that the sex table has data in it as it has been populated in our post deployment script. 
 
 ### Add to Post Deployment Script to Populate Exercise Reference Data
 
-* Replace the code currently in the PostDeploymentScript with that found in the TemplateScript folder beginning with 05f_
+* Replace the code currently in the PostDeploymentScript with that found in the [TemplateScripts](https://github.com/griff182uk/MyGymDB/tree/master/MyGymDB/TemplateScripts) folder beginning with 05f_
 * Publish your project to the development location.
 * You should now see that the exercise table has data in it as it has been populated in our post deployment script. 
 
