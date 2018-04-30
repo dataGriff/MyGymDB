@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [import].[Sex]
 (
 	[SexId] TINYINT IDENTITY NOT NULL PRIMARY KEY
-	,[Description] NVARCHAR(15) NOT NULL, 
-    [FirstInserted] DATETIME2 NOT NULL DEFAULT getdate()
+	,[Description] NVARCHAR(15) NOT NULL
+    ,[FirstInserted] DATETIME2 NOT NULL CONSTRAINT DFT_import_Sex_FirstInserted DEFAULT SYSUTCDATETIME()
+	,[LastUpdated] DATETIME2 NOT NULL CONSTRAINT DFT_import_Sex_LastUpdated DEFAULT SYSUTCDATETIME() 
 )
 
 GO

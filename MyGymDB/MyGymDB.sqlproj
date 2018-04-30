@@ -62,10 +62,6 @@
     <Folder Include="import" />
     <Folder Include="import\Tables" />
     <Folder Include="acc\Views" />
-    <Folder Include="import\Tables\ExerciseLog" />
-    <Folder Include="import\Tables\Exercise" />
-    <Folder Include="import\Tables\GymUser" />
-    <Folder Include="import\Tables\Sex" />
     <Folder Include="PopulatingScripts" />
     <Folder Include="TemplateScripts" />
     <Folder Include="import\Procedures" />
@@ -74,18 +70,14 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="acc\Views\GymUser.sql" />
-    <Build Include="import\Tables\Sex\Sex.sql" />
-    <Build Include="import\Tables\GymUser\GymUser.sql" />
-    <Build Include="import\Tables\ExerciseLog\ExerciseLog.sql" />
-    <Build Include="import\Tables\Exercise\Exercise.sql" />
     <None Include="PopulatingScripts\PopulateExercise.sql" />
     <None Include="TemplateScripts\01b_acc_sch.sql" />
     <None Include="TemplateScripts\01c_app_sch.sql" />
     <None Include="TemplateScripts\03c_Import_GymUser_tb.sql" />
     <Build Include="import\Procedures\pr_PopulateSex.sql" />
     <Build Include="import\Procedures\pr_PopulateExercise.sql" />
-    <None Include="TemplateScripts\06a_import_pr_PopulateSex_sp.sql" />
-    <None Include="TemplateScripts\06b_PopulateSex.sql" />
+    <None Include="TemplateScripts\06a_import_pr_PopulateExercise_sp.sql" />
+    <None Include="TemplateScripts\06b_PopulateExercise.sql" />
     <None Include="TemplateScripts\06c_PostDeploy_SexExercise.sql" />
     <None Include="TemplateScripts\02a_import_role.sql" />
     <None Include="TemplateScripts\02b_acc_role.sql" />
@@ -95,7 +87,11 @@
     <Build Include="Security\Roles\import.sql" />
     <Build Include="Security\Roles\acc.sql" />
     <Build Include="Security\Roles\app.sql" />
-    <Build Include="TemplateScripts\01a_import_sch.sql" />
+    <None Include="TemplateScripts\01a_import_sch.sql" />
+    <Build Include="import\Tables\Exercise.sql" />
+    <Build Include="import\Tables\Sex.sql" />
+    <Build Include="import\Tables\GymUser.sql" />
+    <Build Include="import\Tables\ExerciseLog.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyGymDB.refactorlog" />
